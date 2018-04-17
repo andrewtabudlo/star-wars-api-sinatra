@@ -1,0 +1,6 @@
+<ul class="collection with-header">
+  <li class="collection-header"><h4><%= @result[0]["name"] %></h4></li>
+  <% @attributes.each do |a| %>
+    <li class="collection-item"><%= a %>: <%= @result[0][a] %></li>
+  <% end %>
+</ul>
